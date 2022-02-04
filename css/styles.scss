@@ -15,7 +15,7 @@
   margin: 5px;
   padding-left: 2px;
   border-radius: 7%;
-  transition: width 0.8s;
+  transition: width .6s;
 }
 // formato basico de display: flex;
 %basicFlex {
@@ -34,14 +34,17 @@ html {
 
 body {
   padding: 20px;
-  background-color: aliceblue;
+  background-color:antiquewhite;
 }
 
 header {
   text-align: center;
+  h1{
+      margin:5px;
+  }
 }
 main {
-  height: 100vh;
+  height: 80vh;
   @extend %basicFlex;
 }
 .container {
@@ -107,7 +110,7 @@ p {
   padding: 7px;
   border-radius: 50%;
   background-size: contain;
-  transition: width 0.8s;
+  transition: width .6s;
 }
 
 /*
