@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.container8, .container7, .container6, .container5, .container4, .container3, .container2, .container {
+// formato basico de container
+%basicoContainer {
   display: inline-block;
   width: 70px;
   height: 250px;
@@ -15,26 +15,15 @@
   margin: 5px;
   padding-left: 2px;
   border-radius: 7%;
-  -webkit-transition: width 0.8s;
   transition: width 0.8s;
 }
-
-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
+// formato basico de display: flex;
+%basicFlex {
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 html {
@@ -51,51 +40,49 @@ body {
 header {
   text-align: center;
 }
-
 main {
   height: 100vh;
+  @extend %basicFlex;
 }
-
 .container {
+  @extend %basicoContainer;
   background-image: url("../assets/alcohol.jpg");
 }
-
 .container2 {
+  @extend %basicoContainer;
   background-image: url("../assets/cafe.jpg");
 }
-
 .container3 {
+  @extend %basicoContainer;
   background-image: url("../assets/flores.jpg");
 }
-
 .container4 {
+  @extend %basicoContainer;
   background-image: url("../assets/laguna.jpg");
 }
-
 .container5 {
+  @extend %basicoContainer;
   background-image: url("../assets/mujer.jpg");
 }
-
 .container6 {
+  @extend %basicoContainer;
   background-image: url("../assets/panecillos.jpg");
 }
-
 .container7 {
+  @extend %basicoContainer;
   background-image: url("../assets/playa.jpg");
 }
-
 .container8 {
+  @extend %basicoContainer;
   background-image: url("../assets/sombra.jpg");
 }
-
 .row {
   width: 5px;
   height: 250px;
 }
-
 p {
   display: inline-block;
-  color: #000;
+  color:#000;
   font-weight: bold;
 }
 
@@ -106,6 +93,7 @@ p {
       color: #fff;
       font-weight: bold;
   } */
+
 .container:hover,
 .container2:hover,
 .container3:hover,
@@ -119,7 +107,6 @@ p {
   padding: 7px;
   border-radius: 50%;
   background-size: contain;
-  -webkit-transition: width 0.8s;
   transition: width 0.8s;
 }
 
