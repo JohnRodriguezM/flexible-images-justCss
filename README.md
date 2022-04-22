@@ -11,4 +11,4 @@ Author ✒️:
 License 📄: 
 - The project has MIT license.
 
-⌨️ con ❤️ por [@johnn_73](https://twitter.com/Johnn_73?t=WbbTl-IHtUrSklakbkztMg&s=08) 😊
+⌨️ con ❤️ por [@johnn_73](https://twitter.com/Johnn_73?t=WbbTl-IHtUrSklakbkztMg&s=08)
