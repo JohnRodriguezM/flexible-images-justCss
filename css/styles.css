@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +21,6 @@
   transition: all 1s ease;
 }
 
-/* formato basico de display: flex; - se usa para la organización de cualquier contenedor */
 main {
   display: -webkit-box;
   display: -ms-flexbox;
