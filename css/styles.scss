@@ -4,10 +4,10 @@
   box-sizing: border-box;
 }
 
-// formato basico de container
+// formato basico de container para copiar sus estílos
 %basicoContainer {
-  display: inline-block;
-  width: 70px;
+  display: inline-flex;
+  width: 9vw;
   height: 250px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -15,21 +15,23 @@
   margin: 5px;
   padding-left: 2px;
   border-radius: 7%;
-  transition: width .6s;
+  transition: all 1s ease;
 }
-// formato basico de display: flex;
+/* formato basico de display: flex; - se usa para la organización de cualquier contenedor - actualmente no se encuentra en uso dentro de los estílos
 %basicFlex {
   display: flex;
+  flex: 1 1;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-}
+  /* transition: all 2s ease;
+} */
 
 html {
   font-size: 1rem;
   margin: 0 auto;
-  max-width: 1000px;
+  max-width:100%;
 }
 
 body {
@@ -43,6 +45,7 @@ header {
       margin:5px;
   }
 }
+
 main {
   height: 80vh;
   @extend %basicFlex;
@@ -85,8 +88,11 @@ main {
 }
 p {
   display: inline-block;
-  color:#000;
+  color:black;
   font-weight: bold;
+}
+p:hover{
+  text-transform: uppercase;
 }
 
 /* figcaption::after{
@@ -105,19 +111,10 @@ p {
 .container6:hover,
 .container7:hover,
 .container8:hover {
-  width: 350px;
+  width: 18vw;
   height: 250px;
   padding: 7px;
-  border-radius: 50%;
+  border-radius: 30%;
   background-size: contain;
-  transition: width .6s;
+ 
 }
-
-/*
-  .container:hover{
- background-size: contain
-  }
-  .container::after:hover{
-      top: 10px;
-  }
-  */
