@@ -17,7 +17,7 @@
   border-radius: 7%;
   transition: all 1s ease;
 }
-/* formato basico de display: flex; - se usa para la organización de cualquier contenedor - actualmente no se encuentra en uso dentro de los estílos
+/* formato basico de display: flex; - se usa para la organización de cualquier contenedor */
 %basicFlex {
   display: flex;
   flex: 1 1;
@@ -25,8 +25,7 @@
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  /* transition: all 2s ease;
-} */
+}
 
 html {
   font-size: 1rem;
@@ -50,36 +49,32 @@ main {
   height: 80vh;
   @extend %basicFlex;
 }
-.container {
+// CONTENEDOR DE LAS IMAGENES
+.container{
   @extend %basicoContainer;
+}
+.container1 {
   background-image: url("../assets/alcohol.jpg");
 }
 .container2 {
-  @extend %basicoContainer;
   background-image: url("../assets/cafe.jpg");
 }
 .container3 {
-  @extend %basicoContainer;
   background-image: url("../assets/flores.jpg");
 }
 .container4 {
-  @extend %basicoContainer;
   background-image: url("../assets/laguna.jpg");
 }
 .container5 {
-  @extend %basicoContainer;
   background-image: url("../assets/mujer.jpg");
 }
 .container6 {
-  @extend %basicoContainer;
   background-image: url("../assets/panecillos.jpg");
 }
 .container7 {
-  @extend %basicoContainer;
   background-image: url("../assets/playa.jpg");
 }
 .container8 {
-  @extend %basicoContainer;
   background-image: url("../assets/sombra.jpg");
 }
 .row {
@@ -95,26 +90,10 @@ p:hover{
   text-transform: uppercase;
 }
 
-/* figcaption::after{
-      position: absolute;
-      top:40px;
-      content: "si somos";
-      color: #fff;
-      font-weight: bold;
-  } */
-
-.container:hover,
-.container2:hover,
-.container3:hover,
-.container4:hover,
-.container5:hover,
-.container6:hover,
-.container7:hover,
-.container8:hover {
+.container:hover {
   width: 18vw;
   height: 250px;
   padding: 7px;
   border-radius: 30%;
   background-size: contain;
- 
 }
